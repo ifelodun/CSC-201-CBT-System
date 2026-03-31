@@ -1,0 +1,6 @@
+<h2>Admin</h2>
+<a href="/add">Add Question</a>
+
+{% for q in questions %}
+<p>{{ q.question }} <a href="/delete/{{ q.id }}">Delete</a></p>
+{% endfor %}
